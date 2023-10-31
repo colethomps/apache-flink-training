@@ -33,7 +33,7 @@ To run this repo, the following components will need to be installed:
 Clone/fork the repo and navigate to the root directory on your local computer.
 
 ```bash
-git clone https://github.com/EcZachly-Inc-Second-Bootcamp/4-apache-flink-training.git
+git clone https://github.com/colethomps/apache-flink-training.git
 cd apache-flink-training
 ```
 
@@ -57,7 +57,7 @@ cd apache-flink-training
     KAFKA_TOPIC="" # update this value
     KAFKA_URL="" # update this value
 
-    CONTAINER_PREFIX=eczachly-flink
+    CONTAINER_PREFIX=colethomps-flink
     IMAGE_NAME=pyflink/pyflink:1.16.0-scala_2.12
     FLINK_VERSION=1.16.0
     PYTHON_VERSION=3.7.9
@@ -108,7 +108,7 @@ cd apache-flink-training
 
     After about a minute, you should see a prompt that the job's been submitted (e.g., `Job has been submitted with JobID <job_id_number>`). Now go back to the [Flink UI](http://localhost:8081/#/job/running) to see the job running! :tada:
 
-4. Trigger an event from the Kafka source by visiting [www.zachwilson.tech](https://www.zachwilson.tech/) and then query the `processed_events` table in your postgreSQL database to confirm the data/events were added.
+4. Trigger an event from the Kafka source by visiting (https://www.zachwilson.tech/) and then query the `processed_events` table in your postgreSQL database to confirm the data/events were added.
 
     ```bash
     make psql
